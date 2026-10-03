@@ -121,5 +121,60 @@
     "notes": [
       "Counts match Section 4.2 D5 expectations exactly."
     ]
-  }
+  },
+  "official_test_set": {
+    "total_count": 1500,
+    "repositories": [
+      "bitcoin/bitcoin",
+      "facebook/react",
+      "microsoft/vscode",
+      "opencv/opencv",
+      "tensorflow/tensorflow"
+    ],
+    "labels": [
+      "bug",
+      "feature",
+      "question"
+    ],
+    "counts_per_repo": {
+      "facebook/react": 300,
+      "tensorflow/tensorflow": 300,
+      "microsoft/vscode": 300,
+      "bitcoin/bitcoin": 300,
+      "opencv/opencv": 300
+    },
+    "counts_per_label": {
+      "bug": 500,
+      "feature": 500,
+      "question": 500
+    },
+    "counts_per_repo_and_label": {
+      "bitcoin/bitcoin": {
+        "feature": 100,
+        "question": 100,
+        "bug": 100
+      },
+      "facebook/react": {
+        "bug": 100,
+        "feature": 100,
+        "question": 100
+      },
+      "microsoft/vscode": {
+        "bug": 100,
+        "feature": 100,
+        "question": 100
+      },
+      "opencv/opencv": {
+        "bug": 100,
+        "question": 100,
+        "feature": 100
+      },
+      "tensorflow/tensorflow": {
+        "question": 100,
+        "feature": 100,
+        "bug": 100
+      }
+    }
+  },
+  "train_test_overlap_count": 3
 }

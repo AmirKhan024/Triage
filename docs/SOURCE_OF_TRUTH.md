@@ -479,9 +479,20 @@ This section is the centre of the project. Results go in `docs/EVAL_REPORT.md`; 
 
 | Metric | Value with 95% interval |
 |---|---|
-| M1 average F1 (benchmark test) | TBD |
+| M1 average F1 (benchmark test) | 0.7721 [0.7502, 0.7946] |
 | M2 average F1 (benchmark test) | TBD |
 | Published baseline / strongest published result | 0.8270 / 0.8934 |
+
+#### M1 vs Published Baseline (Test Set Breakdown)
+
+| Repository | M1 Macro F1 (95% CI) | Published Baseline F1 |
+|---|---|---|
+| facebook/react | 0.7915 [0.7445, 0.8336] | 0.8718 |
+| tensorflow/tensorflow | 0.8152 [0.7717, 0.8531] | 0.8644 |
+| opencv/opencv | 0.7616 [0.7108, 0.8079] | 0.8173 |
+| bitcoin/bitcoin | 0.7500 [0.7013, 0.7986] | 0.7555 |
+| microsoft/vscode | 0.7341 [0.6821, 0.7845] | 0.8262 |
+| **Overall Macro F1** | **0.7721 [0.7502, 0.7946]** | **0.8270** |
 | Chosen `T_HIGH` / `C_MIN` | TBD |
 | Share auto-labelled at chosen threshold | TBD |
 | Accuracy on auto-labelled share | TBD |

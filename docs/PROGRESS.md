@@ -5,7 +5,7 @@ Rule: Only work on the current active stage. Do not move to the next stage until
 
 ---
 
-## Current Active Stage: Stage 1 (Classifier (M1))
+## Current Active Stage: Stage 2 (Rules and routing)
 
 ---
 
@@ -20,12 +20,13 @@ Rule: Only work on the current active stage. Do not move to the next stage until
 - [x] `results/data_report.json` generated documenting counts per repository and class.
 - [x] **Exit criteria**: Section 4.2 D5 confirmed or corrected via data report (confirmed 100% matching).
 
-### [PENDING] Stage 1: Classifier (M1)
-- [ ] Install and pin ML & lint/test dependencies: `scikit-learn`, `pytest`, `ruff`.
-- [ ] Preprocessing module implemented and unit tested.
-- [ ] M1 (TF-IDF + LogisticRegression) trained on `train` split only.
-- [ ] Scored on test set (E1) with bootstrap confidence intervals, compared against 0.8270 baseline and 0.8934 published result.
-- [ ] **Exit criteria**: Results table updated in results and documentation.
+### [COMPLETED] Stage 1: Classifier (M1)
+- [x] Install and pin ML & lint/test dependencies: `scikit-learn==1.9.1`, `pytest==9.1.1`, `ruff==0.16.10`.
+- [x] Preprocessing module implemented and unit tested (`tests/test_preprocess.py`).
+- [x] M1 (TF-IDF + LogisticRegression) trained on `train` split only (`models/classifier.joblib`).
+- [x] Scored on test set (E1) with bootstrap confidence intervals, compared against 0.8270 baseline and 0.8934 published result (`results/e1_results.json`).
+- [x] Before scoring, updated `results/data_report.json` with official test counts and train-test duplicate row overlap count (3 rows).
+- [x] **Exit criteria**: Results table in Section 10.3 of `docs/SOURCE_OF_TRUTH.md` updated with per-repository and average F1 scores next to published numbers; preprocessing unit tests pass.
 
 ### [PENDING] Stage 2: Rules and routing
 - [ ] Install Pydantic.
