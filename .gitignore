@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# Environment variables & secrets
+.env
+
+# Data & Models (per section 13 of SOURCE_OF_TRUTH)
+data/
+models/
+*.joblib
+*.npy
+*.sqlite
+*.db
+
+# Caching & Testing
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

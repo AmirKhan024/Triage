@@ -1,0 +1,125 @@
+{
+  "dataset_name": "NLBSE'24 Issue Report Classification",
+  "official_training_set": {
+    "total_count": 1500,
+    "unique_issue_ids": 1500,
+    "repositories": [
+      "bitcoin/bitcoin",
+      "facebook/react",
+      "microsoft/vscode",
+      "opencv/opencv",
+      "tensorflow/tensorflow"
+    ],
+    "labels": [
+      "bug",
+      "feature",
+      "question"
+    ],
+    "counts_per_repo": {
+      "facebook/react": 300,
+      "tensorflow/tensorflow": 300,
+      "microsoft/vscode": 300,
+      "bitcoin/bitcoin": 300,
+      "opencv/opencv": 300
+    },
+    "counts_per_label": {
+      "bug": 500,
+      "feature": 500,
+      "question": 500
+    },
+    "counts_per_repo_and_label": {
+      "bitcoin/bitcoin": {
+        "feature": 100,
+        "question": 100,
+        "bug": 100
+      },
+      "facebook/react": {
+        "bug": 100,
+        "feature": 100,
+        "question": 100
+      },
+      "microsoft/vscode": {
+        "bug": 100,
+        "feature": 100,
+        "question": 100
+      },
+      "opencv/opencv": {
+        "bug": 100,
+        "question": 100,
+        "feature": 100
+      },
+      "tensorflow/tensorflow": {
+        "question": 100,
+        "feature": 100,
+        "bug": 100
+      }
+    }
+  },
+  "stratified_splits": {
+    "seed": 42,
+    "train_count": 1200,
+    "val_count": 300,
+    "train_per_repo_and_label": {
+      "bitcoin/bitcoin": {
+        "feature": 80,
+        "bug": 80,
+        "question": 80
+      },
+      "facebook/react": {
+        "question": 80,
+        "feature": 80,
+        "bug": 80
+      },
+      "microsoft/vscode": {
+        "bug": 80,
+        "feature": 80,
+        "question": 80
+      },
+      "opencv/opencv": {
+        "feature": 80,
+        "bug": 80,
+        "question": 80
+      },
+      "tensorflow/tensorflow": {
+        "question": 80,
+        "bug": 80,
+        "feature": 80
+      }
+    },
+    "val_per_repo_and_label": {
+      "bitcoin/bitcoin": {
+        "bug": 20,
+        "question": 20,
+        "feature": 20
+      },
+      "facebook/react": {
+        "question": 20,
+        "bug": 20,
+        "feature": 20
+      },
+      "microsoft/vscode": {
+        "feature": 20,
+        "question": 20,
+        "bug": 20
+      },
+      "opencv/opencv": {
+        "feature": 20,
+        "question": 20,
+        "bug": 20
+      },
+      "tensorflow/tensorflow": {
+        "feature": 20,
+        "question": 20,
+        "bug": 20
+      }
+    }
+  },
+  "section_4_2_D5_verification": {
+    "expected_per_repo": 300,
+    "expected_per_class_per_repo": 100,
+    "confirmed": true,
+    "notes": [
+      "Counts match Section 4.2 D5 expectations exactly."
+    ]
+  }
+}
